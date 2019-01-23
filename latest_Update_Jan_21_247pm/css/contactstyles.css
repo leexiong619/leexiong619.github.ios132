@@ -1,0 +1,479 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    'Righteous';
+    width: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*Grid Styles*/
+
+#contactWrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "logo nav nav nav nav buttons"
+        ". contactMe contactMe . . ."
+        ". form form form form ."
+        ". form form form form ."
+        ". form form form form ."
+        ". form form form form ."
+        ". form form form form ."
+        ". form form form form ."
+        ". form form form form ."
+        ". form form form form ."
+        ". form form form form ."
+        ". form form form form ."
+        ". form form form form ."
+        ". mySchedule muSchedule contactInfo contactInfo ."
+        ". . . imageMap imageMap ."
+        ". FAQ FAQ FAQ FAQ ."
+        "footer footer footer footer footer footer";
+}
+
+/*#formGrid*/
+
+#fieldset {
+    display: grid;
+    grid-template-columns: (6, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "fieldset fieldset fieldset fieldset fieldset fieldset"
+        "fieldset fieldset fieldset fieldset fieldset fieldset"
+        "fieldset fieldset fieldset fieldset fieldset fieldset"
+        "fieldset fieldset fieldset fieldset fieldset fieldset"
+        "fieldset fieldset fieldset fieldset fieldset fieldset"
+        "fieldset fieldset fieldset fieldset fieldset fieldset"
+        "fieldset fieldset fieldset fieldset fieldset fieldset"
+        "fieldset fieldset fieldset fieldset fieldset fieldset"
+        "fieldset fieldset fieldset fieldset fieldset fieldset"
+        "fieldset fieldset fieldset fieldset fieldset fieldset";
+
+}
+
+
+#formGrid {
+    display: grid;
+    grid-template-columns: (12, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        /*". . . contactMe . . . . . . . ."*/
+        ". . . label1 label1 input1 input1 input1 input1 . . ."
+        ". . . label2 label2 input2 input2 input2 input2 . . ."
+        ". . . label3 label3 input3 input3 input3 input3 . . ."
+        ". . . label4 label4 input4 input4 input4 input4 . . ."
+        ". . . label5 label5 input5 input5 input5 input5 . . ."
+        ". . . label6 label6 input6 input6 input6 input6 . . ."
+        ". . . label7 label7 input7 input7 input7 input7 . . ."
+        ". . . label8 label8 input8 input8 input8 input8 . . ."
+        ". . . label9 label9 input9 input9 input9 input9 . . ."
+        ". . . submitButton . . . . . . . .";
+}
+
+
+/*End Grid Styles*/
+
+/*Logo*/
+
+.logo {
+    grid-area: logo;
+}
+/*End Logo*/
+
+/*Nav */
+
+.nav {
+    grid-area: nav;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    height: 50px;
+    grid-template: auto / repeat(5, 1fr);
+    grid-gap: 20px;
+    align-content: center;
+}
+
+/* End Nav */
+
+/* Buttons */
+
+.button {
+    grid-area: buttons;
+    padding-top: 30px;
+    margin-top: -25px;
+    margin-right: 20px;
+    /*padding-top: 30px;*/
+}
+
+.navbuttons {
+    display: grid;
+    height: auto;
+    grid-template: auto / repeat(2, 1fr);
+    /*align-content: center;*/
+}
+
+#button {
+    width: 100px;
+    background-color: #009fff;
+    color: #ffffff;
+    border: 2px solid #e7e7e7;
+    border-radius: .5em;
+    padding: .5em;
+    font-size: 1.1em;
+}
+
+#button1 {
+    width: 100px;
+    /*padding: 0px 100px 0px 200px;*/
+    background-color: #ffffff;
+    color: black;
+    border: 2px solid lightgrey;
+    border-radius: .5em;
+    padding: .5em;
+    font-size: 1.1em;
+    margin-bottom: ;
+
+}
+
+/* End Buttons */
+/* Footer */
+
+.footer {
+    grid-area: footer;
+    height: 8em;
+    background-color: black;
+}
+
+.footer p {
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: "Open Sans";
+    margin: 25px 0 0 0;
+    margin-right: 18px;
+}
+
+.social-media {
+    margin: 0 auto;
+    width: 250px;
+}
+
+.social-media div {
+    float: left;
+    margin-left: 5px;
+    margin-right: 1px;
+}
+
+.social-media a {
+    display: block;
+    width: 50px;
+    height: 47px;
+    text-indent: -9999px;
+}
+
+.social-media div.one {
+    background: url('../images/socialmediaiconscropped.png') 0 0;
+}
+
+.social-media div.two {
+    background: url('../images/socialmediaiconscropped.png') -48px 0;
+}
+
+.social-media div.three {
+    background: url('../images/socialmediaiconscropped.png') -98px 0;
+}
+
+.social-media div.four {
+    background: url('../images/socialmediaiconscropped.png')-148px 0;
+}
+
+/*End Footer*/
+
+/*Form Grid Area*/
+
+form {
+    grid-area: form;
+}
+
+/*Fieldset Grid Area*/
+
+#fieldset {
+    grid-area: fieldset;
+}
+
+/*Beginning Form Grid Areas*/
+
+#contactMe {
+    grid-area: contactMe;
+}
+
+#label1 {
+    grid-area: label1;
+}
+
+#input1 {
+    grid-area: input1;
+}
+
+#label2 {
+    grid-area: label2;
+}
+
+#input2 {
+    grid-area: input2;
+}
+
+#label3 {
+    grid-area: label3;
+}
+
+#input3 {
+    grid-area: input3;
+}
+
+#label4 {
+    grid-area: label4;
+}
+
+#input4 {
+    grid-area: input4;
+}
+
+#label5 {
+    grid-area: label5;
+}
+
+#input5 {
+    grid-area: input5;
+}
+
+#label6 {
+    grid-area: label6;
+}
+
+#input6 {
+    grid-area: input6;
+}
+
+#label7 {
+    grid-area: label7;
+}
+
+#input7 {
+    grid-area: input7;
+}
+
+#label8 {
+    grid-area: label8;
+}
+
+#input8 {
+    grid-area: input8;
+}
+
+#label9 {
+    grid-area: label9;
+}
+
+#input9 {
+    grid-area: input9;
+}
+
+#submitButton {
+    grid-area: submitButton;
+}
+
+/*End Form Grid Area*/
+
+/*Begin My Schedule, Contact, and Image Map Grid Area*/
+#myschedule{
+    grid-area: mySchedule;
+}
+#contactInfo{
+    grid-area: contactInfo;
+}
+#imageMap{
+    grid-area: imageMap;
+}
+/*End My Schedule, Contact, and Image Map Grid Area*/
+
+/*FAQ Grid Area Begins*/
+#FAQ{
+    grid-area: FAQ;
+}
+/*FAQ Grid Area Ends*/
+/*Contact Us Form Styles*/
+
+input[type="email"],
+input[type="text"],
+input[type="tel"],
+textarea,
+select {
+    width: 22em;
+    height: 2.4em;
+    padding: .4em .6em;
+    background-color: #fff;
+    border: 1px solid #D1D1D1;
+    border-radius: .25em;
+    box-shadow: none;
+    box-sizing: border-box;
+    margin: .8em;
+}
+
+textarea {
+    min-height: 4em;
+    padding-top: .4em;
+    padding-bottom: .4em;
+}
+
+#label1 > label, #label2 > label, #label3 > label, #label4 > label, #label5 > label > legend, #label6 > label > legend, #label7 > label, #label8 > label, #label9 > label {
+    display: block;
+    /*float: left;*/
+    width: 19em;
+    height: 2em;
+    font-weight: 600;
+}
+
+fieldset {
+    border-color: #cdcdcd;
+    margin-bottom: 1em;
+    border-radius: .25em;
+}
+
+/*#contactWrapper > form > div.formLabel{
+      grid-area: formLabel;
+  
+}*/
+
+input[type="checkbox"],
+input[type="radio"] {
+    display: inline;
+    margin: .5em;
+}
+
+/*label>.label-body {
+	display: inline-block;
+	margin-left: .5rem;
+	font-weight: normal;
+}*/
+
+input[type="submit"] {
+    /*display: inline-block;*/
+    height: 2.4em;
+    padding: 0 1.9em;
+    color: #555;
+    text-align: center;
+    font-size: .9em;
+    font-weight: 600;
+    line-height: 2.4em;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border-radius: .25em;
+    border: 1px solid #bbb;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-bottom: 1em;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+    color: #333;
+    border-color: #888;
+    outline: 0;
+}
+
+/*hr {
+    grid-area:hr;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-width: 0;
+    border-top: 1px solid #E1E1E1;
+}*/
+
+input[type="text"]:required,
+input[type="tel"]:required,
+input[type="email"]:required {
+    border-color: yellow;
+}
+
+input[type="text"]:valid,
+input[type="tel"]:valid,
+input[type="email"]:valid {
+    border-color: rgb(0, 128, 0);
+}
+input[type="text"]:invalid,
+input[type="tel"]:invalid,
+input[type="email"]:invalid{
+    border-color: rgb(247, 6, 6);   
+}
+
+#customFitnessPackages {
+    margin-bottom: 2em;
+}
+
+#questions {
+    font-size: 1.8em;
+}
+
+#label1 > p {
+    padding-bottom: ;
+
+}
+
+/*Contact Us Form Styles End*/
+
+/*END MOBILE PORTRAIT MEDIA QUERRY*/
+        /********************* PRINT MEDIA QUERY **********/
+        @media print {
+            body {
+                background: white;
+                font-size: 12pt;
+            }
+
+            .header,
+            .hr,
+            .footer,
+            .button,
+            .nav,
+            .testimonial1,
+            .testimonials1,
+            .testimonial2,
+            .row1main,
+            .headline {
+                display: none;
+            }
+            .myschedule{
+                grid-area: initial;
+                display: block;
+            }
+            .contactInfo{
+                grid-area: initial;
+                display: block;
+            }
+            .circles {
+                display: block;
+                height: initial;
+                margin-top: initial;
+                text-align: center;
+            }
+
+            #heading2 {
+                color: initial;
+            }
+
+
+        }
+
+        /****************** ENDPRINT MEDIA QUERY *********/

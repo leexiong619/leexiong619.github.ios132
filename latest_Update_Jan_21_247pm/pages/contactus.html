@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel=stylesheet href="../css/contactstyles.css">
+    <script src="../js/script.js"></script>
+    <!--<script type="text/javascript">
+        function Warn() {
+            alert("submission received");
+            document.write("Your submission was received");
+        }
+    </script>-->
+    <title>The Advanced Grid Layout</title>
+</head>
+
+<body>
+    <div id="contactWrapper">
+        <div class="logo">
+            <img src="../images/logo.png" alt="">
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="../6_advanced_grid.html">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Prices</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="../pages/contactus.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!--Buttons-->
+        <div class="button">
+            <div class="navbuttons">
+                <button id="button">
+                    <a href="tel:+1-303-499-7111">Call Me</a></button>
+                <button id="button1">
+                    <a href="mailto:russianpersonaltrainer.com?subject=
+                             &body=Please send me a copy of your new program!">Email Me</a></button>
+            </div>
+        </div>
+        <h1 id="contactMe">Contact Us</h1>
+        <!--Form-->
+        <form action="" method="post">
+            <fieldset id="fieldset">
+                <legend id="questions">For questions and Inquries</legend>
+                <div id="formGrid">
+                    <div id="label1">
+                        <p><em>Note: Fields highlighted in blue are required.</em></p>
+                        <label>Name:</label>
+                    </div>
+                    <div id="input1">
+                        <input type="text" name="name" maxlength="30" required>
+                    </div>
+                    <div id="label2">
+                        <label>Company Name:</label>
+                    </div>
+                    <div id="input2">
+                        <input type="text" name="companyname" maxlength="30" required>
+                    </div>
+                    <div id="label3">
+                        <label>Phone Number:</label>
+                    </div>
+                    <div id="input3">
+                        <input type="tel" name="phonenumber" maxlength="20" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required title="Ex: 777-777-7777">
+                    </div>
+                    <div id="label4">
+                        <label>Email:</label>
+                    </div>
+                    <div id="input4">
+                        <input type="email" name="email" maxlength="30" required>
+                    </div>
+                    <div id="label5">
+                        <label>
+                            <legend>Services of Interest:</legend>
+                        </label>
+                    </div>
+                    <div id="input5">
+                        <input type="checkbox" name="services" id="trainingForSeniors" value="trainingForSeniors"><label for="trainingForSeniors">Training for Seniors</label><br>
+                        <input type="checkbox" name="services" id="TrainingForChildren" value="TrainingForChildren"><label for="TrainingForChildren">Training For Children</label><br>
+                        <input type="checkbox" name="services" id="trainingForAutisticChildren" value="trainingForAutisticChildren"><label for="trainingForAutisticChildren">Training for Autistic Children</label><br>
+                        <input type="checkbox" name="services" id="SportsAndTherapyMassage" value="SportsAndTherapyMassage"><label for="SportsAndTherapyMassage">Sports and Therapy Massage</label><br>
+                        <input type="checkbox" name="services" id="customFitnessPackages" value="customFitnessPackages"><label for="customFitnessPackages">Custom Fitness Packages</label>
+                    </div>
+                    <div id="label6">
+                        <label>
+                            <legend>Fitness Level:</legend>
+                        </label>
+                    </div>
+                    <div id="input6">
+                        <input type="radio" name="fitnessLevel" value="beginner" id="beginner"><label for="beginner">Beginner</label><br>
+                        <input type="radio" name="fitnessLevel" value="intermediate" id="intermediate"><label for="intermediate">Intermediate</label><br>
+                        <input type="radio" name="fitnessLevel" value="Advanced" id="advanced"><label for="advanced">Advanced</label><br>
+                    </div>
+                    <div id="label7">
+                        <label>Training Environment Desired:</label>
+                    </div>
+                    <div id="input7">
+                        <select name="trainingEnvironment">
+                            <option value="indoors my location">Indoors - your location</option>
+                            <option value="Indoors my location">Indoors - my location</option>
+                            <option value="Outdoors only">Outdoors only</option>
+                            <option value="Indoors and outdoors">Indoors and outdoors</option>
+                        </select>
+                    </div>
+                    <div id="label8">
+                        <label>How did you hear about us?</label>
+                    </div>
+                    <div id="input8">
+                        <select name="hearaboutus" multiple>
+                            <option value="Radio Ad">Radio Ad</option>
+                            <option value="Television Ad">Television Ad</option>
+                            <option value="Magazine Ad">Magazine Ad</option>
+                            <option value="Internet Search">Internet Search</option>
+                            <option value="Word of Mouth">Word of Mouth</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div id="label9">
+                        <label>Questions/Comments?</label>
+                    </div>
+                    <div id="input9">
+                        <textarea name="questions"></textarea>
+                    </div>
+                    <br>
+                    <div id="submitButton">
+                        <input type="button" value="Submit Form" onclick="showAlert();" />
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+
+        <!--End Form-->
+
+        <!--My Schedule and Image Map Begin-->
+        <section id="myschedule">
+            <h2>My Availability</h2>
+        </section>
+        <section id="contactInfo">
+            <h3>Contact Info</h3>
+            <p><em>15870 Camino San Bernardo,<br>
+                    San Diego, CA 92127</em></p>
+            <p>1-619-332-8551</p>
+        </section>
+        <aside id="imageMap">
+            <img src="../images/imagemap.png" alt="Russian Personal Trainer Location" usemap="#elenasLocation">
+            <map name="elenasLocation">
+                <area href="https://www.google.com/maps/place/San+Diego+Outdoor+Personal+Trainer/" shape="rect" coords="0,0,437,418">
+            </map>
+            <!-- Image Map Generated by http://www.image-map.net/ -->
+            <!--<img src="https://www.google.com/maps/place/San+Diego+Outdoor+Personal+Trainer/@33.0122968,-117.1377992,14z/data=!4m5!3m4!1s0x0:0x1fb7bbdbe7aa3b94!8m2!3d33.0146463!4d-117.1260595?hl=en-US" usemap="#elenasLocation">
+
+            <map name="elenasLocation">
+                <area target="_blank" alt="Russian Personal Trainer Location Map" title="Russian Personal Trainer Location Map" href="https://www.google.com/maps/place/San+Diego+Outdoor+Personal+Trainer/" coords="" shape="rect">
+                <area target="" alt="" title="" href="" coords="" shape="0">
+            </map>
+-->
+        </aside>
+        <!--My Schedule and Image Map End-->
+
+        <!--FAQ Begin-->
+        <article id="FAQ">
+            <h1>FAQ</h1>
+        </article>
+        <!--FAQ End-->
+
+        <!-- Footer-->
+
+        <footer class="footer">
+            <p>Copyright &copy; 2016</p>
+            <div class="social-media">
+                <div class="one"><a href="http://www.twitter.com">Russian Personal Trainer on Twitter</a></div>
+                <div class="two"><a href="http://www.facebook.com">Russian Personal Trainer on Facebook</a></div>
+                <div class="three"><a href="http://www.snapchat.com">Russian Personal Trainer on Snapchat</a></div>
+                <div class="four"><a href="http://www.instagram.com">Russian Personal Trainer on Instagram</a></div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- End Footer -->
+
+</body>
+
+</html>
